@@ -1,41 +1,50 @@
 function Contact() {
   return (
-    <section>
+    <section className="contact-page">
       <h1 className="section-title terminal-copy">### CONTACT</h1>
+      <p className="terminal-copy terminal-copy--dim contact-intro">
+        Best way to reach me is email. I usually reply within 1-2 business days.
+      </p>
       <div className="contact-card">
-        <pre className="terminal-copy">
-          <code>
-            $ cat contact.txt
-            {'\n'}
-            <span className="contact-arrow">-&gt;</span>{' '}
-            <span className="contact-label">Email:</span>{' '}
-            <a className="terminal-link" href="mailto:alex.chen@example.com">
+        <p className="terminal-copy contact-command">
+          <span className="terminal-prompt">$</span> ./contact --details
+        </p>
+        <div className="contact-list" aria-label="Contact details">
+          <div className="contact-item">
+            <span className="contact-item__label terminal-copy terminal-copy--dim">
+              email
+            </span>
+            <a className="terminal-link contact-item__value" href="mailto:alex.chen@example.com">
               alex.chen@example.com
             </a>
-            {'\n'}
-            <span className="contact-arrow">-&gt;</span>{' '}
-            <span className="contact-label">LinkedIn:</span>{' '}
+          </div>
+          <div className="contact-item">
+            <span className="contact-item__label terminal-copy terminal-copy--dim">
+              linkedin
+            </span>
             <a
-              className="terminal-link"
+              className="terminal-link contact-item__value"
               href="https://linkedin.com/in/alexchen"
               target="_blank"
               rel="noreferrer"
             >
               linkedin.com/in/alexchen
             </a>
-            {'\n'}
-            <span className="contact-arrow">-&gt;</span>{' '}
-            <span className="contact-label">GitHub:</span>{' '}
+          </div>
+          <div className="contact-item">
+            <span className="contact-item__label terminal-copy terminal-copy--dim">
+              github
+            </span>
             <a
-              className="terminal-link"
+              className="terminal-link contact-item__value"
               href="https://github.com/alexchen"
               target="_blank"
               rel="noreferrer"
             >
               github.com/alexchen
             </a>
-          </code>
-        </pre>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -145,6 +145,14 @@
   letter-spacing: 0.02em;
 }
 
+.contact-page {
+  max-width: 46rem;
+}
+
+.contact-intro {
+  margin: -0.35rem 0 1.35rem;
+}
+
 .code-card,
 .contact-card {
   max-width: 58rem;
@@ -183,15 +191,49 @@
 }
 
 .contact-card {
-  margin-top: 1.5rem;
-  padding: 1.25rem 1.4rem;
-  min-height: 17rem;
+  max-width: 46rem;
+  padding: 1.1rem 1.25rem;
 }
 
-.contact-arrow,
-.contact-label {
-  color: var(--accent-green);
-  text-shadow: 0 0 10px rgba(125, 255, 152, 0.12);
+.contact-command {
+  margin-bottom: 0.9rem;
+}
+
+.contact-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: minmax(6.5rem, 7.5rem) minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.018);
+  transition:
+    border-color 140ms ease,
+    background-color 140ms ease,
+    transform 140ms ease;
+}
+
+.contact-item:hover {
+  border-color: rgba(125, 255, 152, 0.12);
+  background: rgba(255, 255, 255, 0.028);
+  transform: translateX(2px);
+}
+
+.contact-item__label {
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.contact-item__value {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 @keyframes terminal-blink {
@@ -248,7 +290,8 @@
     margin-bottom: 1rem;
   }
 
-  .contact-card {
-    min-height: 0;
+  .contact-item {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
   }
 }
