@@ -1,14 +1,13 @@
 function Contact() {
   return (
     <section className="contact-page">
-      <h1 className="section-title terminal-copy">### CONTACT</h1>
+      <h1 className="terminal-copy section-command">
+        <span className="terminal-prompt">&gt; user@portfolio:~$</span> ./contact --details
+      </h1>
       <p className="terminal-copy terminal-copy--dim contact-intro">
         Best way to reach me is email. I usually reply within 1-2 business days.
       </p>
       <div className="contact-card">
-        <p className="terminal-copy contact-command">
-          <span className="terminal-prompt">$</span> ./contact --details
-        </p>
         <div className="contact-list" aria-label="Contact details">
           <div className="contact-item">
             <span className="contact-item__label terminal-copy terminal-copy--dim">

@@ -1,7 +1,9 @@
 function About() {
   return (
     <section>
-      <h1 className="section-title terminal-copy">// ABOUT ME</h1>
+      <h1 className="terminal-copy section-command">
+        <span className="terminal-prompt">&gt; user@portfolio:~$</span> cat about.ts
+      </h1>
       <div className="code-card">
         <pre className="terminal-copy" aria-label="About code snippet">
           <code>

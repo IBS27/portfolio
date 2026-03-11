@@ -34,25 +34,23 @@ const projects: ProjectItem[] = [
 
 function Projects() {
   return (
-    <ol className="terminal-copy project-list">
-      {projects.map((project) => (
-        <li key={project.id}>
-          <div className="project-line">
-            <span className="project-title">[{project.title}]</span> - {project.description}
-          </div>
-          <div className="project-details">
-            &gt;{' '}
-            <a
-              className="terminal-link"
-              href="#"
-              onClick={(event) => event.preventDefault()}
-            >
-              details
-            </a>
-          </div>
-        </li>
-      ))}
-    </ol>
+    <section>
+      <h1 className="terminal-copy section-command">
+        <span className="terminal-prompt">&gt; user@portfolio:~$</span> ls projects/
+      </h1>
+      <ol className="terminal-copy project-list">
+        {projects.map((project) => (
+          <li key={project.id}>
+            <div className="project-line">
+              <span className="project-title">{project.title}</span>
+            </div>
+            <div className="project-details terminal-copy terminal-copy--dim">
+              {project.description}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
   )
 }
 
