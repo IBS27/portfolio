@@ -15,6 +15,7 @@ function Contact() {
             </span>
             <a className="terminal-link contact-item__value" href="mailto:alex.chen@example.com">
               alex.chen@example.com
+              <span className="contact-item__icon" aria-hidden="true">{'\u2197'}</span>
             </a>
           </div>
           <div className="contact-item">
@@ -28,6 +29,7 @@ function Contact() {
               rel="noreferrer"
             >
               linkedin.com/in/alexchen
+              <span className="contact-item__icon" aria-hidden="true">{'\u2197'}</span>
             </a>
           </div>
           <div className="contact-item">
@@ -41,6 +43,7 @@ function Contact() {
               rel="noreferrer"
             >
               github.com/alexchen
+              <span className="contact-item__icon" aria-hidden="true">{'\u2197'}</span>
             </a>
           </div>
         </div>
