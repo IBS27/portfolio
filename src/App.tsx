@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 import TerminalPanel from './components/TerminalPanel'
 import About from './pages/About'
@@ -22,6 +23,7 @@ function App() {
           </Routes>
         </div>
       </TerminalPanel>
+      <Analytics />
     </div>
   )
 }
