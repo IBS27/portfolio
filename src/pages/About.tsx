@@ -27,15 +27,20 @@ function About() {
           <pre className="terminal-copy" aria-label="Philosophy markdown snippet">
             <code>
               <span className="code-line"><span className="line-number">1</span><span className="token-comment"># how I think about building</span></span>
-              <span className="code-line"><span className="line-number">2</span></span>
+              <span className="code-line"><span className="line-number">2</span><span className="token-string">&nbsp;</span></span>
               <span className="code-line"><span className="line-number">3</span><span className="token-string">I care about shipping things that work.</span></span>
-              <span className="code-line"><span className="line-number">4</span><span className="token-string">Most of my projects start at hackathons or</span></span>
-              <span className="code-line"><span className="line-number">5</span><span className="token-string">from problems I run into and want to solve.</span></span>
-              <span className="code-line"><span className="line-number">6</span></span>
-              <span className="code-line"><span className="line-number">7</span><span className="token-string">I like working across the stack — from GPU</span></span>
-              <span className="code-line"><span className="line-number">8</span><span className="token-string">inference and serverless compute to mobile</span></span>
-              <span className="code-line"><span className="line-number">9</span><span className="token-string">apps and blockchain. Whatever the problem</span></span>
-              <span className="code-line"><span className="line-number">10</span><span className="token-string">needs.</span></span>
+              <span className="code-line"><span className="line-number">4</span><span className="token-string">Most of my projects start at hackathons</span></span>
+              <span className="code-line"><span className="line-number">5</span><span className="token-string">or from problems I want to solve — 2x</span></span>
+              <span className="code-line"><span className="line-number">6</span><span className="token-string">hackathon winner and counting.</span></span>
+              <span className="code-line"><span className="line-number">7</span><span className="token-string">&nbsp;</span></span>
+              <span className="code-line"><span className="line-number">8</span><span className="token-string">I like working across the stack — from</span></span>
+              <span className="code-line"><span className="line-number">9</span><span className="token-string">GPU inference and serverless compute to</span></span>
+              <span className="code-line"><span className="line-number">10</span><span className="token-string">mobile apps and on-chain programs.</span></span>
+              <span className="code-line"><span className="line-number">11</span><span className="token-string">Whatever the problem needs.</span></span>
+              <span className="code-line"><span className="line-number">12</span><span className="token-string">&nbsp;</span></span>
+              <span className="code-line"><span className="line-number">13</span><span className="token-string">Right now I'm deep into applied ML and</span></span>
+              <span className="code-line"><span className="line-number">14</span><span className="token-string">AI agents — building systems that reason,</span></span>
+              <span className="code-line"><span className="line-number">15</span><span className="token-string">act, and learn from the real world.</span></span>
             </code>
           </pre>
         </div>

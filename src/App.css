@@ -156,11 +156,12 @@
 .home-page {
   display: flex;
   flex: 1;
-  max-width: 42rem;
+  max-width: 54rem;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.35rem;
-  padding-block: clamp(1rem, 6vh, 4.5rem);
+  padding-top: clamp(4rem, 18vh, 10rem);
+  padding-bottom: clamp(1rem, 4vh, 3rem);
 }
 
 .home-command,
@@ -198,7 +199,6 @@
 }
 
 .home-summary {
-  max-width: 34rem;
   font-size: clamp(1.08rem, 1.45vw, 1.3rem);
 }
 
@@ -288,13 +288,15 @@
 
 .code-line {
   display: block;
-  padding-left: 3.5ch;
+  padding-left: 4ch;
   position: relative;
 }
 
 .line-number {
   position: absolute;
   left: 0;
+  width: 3ch;
+  text-align: right;
   color: rgba(255, 255, 255, 0.18);
   user-select: none;
 }
