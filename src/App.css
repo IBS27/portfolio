@@ -283,7 +283,15 @@
 .about-blocks {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0;
+}
+
+.about-blocks .section-command {
+  margin: 2rem 0 1.35rem;
+}
+
+.about-blocks .section-command:first-child {
+  margin-top: 0;
 }
 
 .code-line {
