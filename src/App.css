@@ -306,6 +306,12 @@
   font-style: italic;
 }
 
+.token-heading {
+  color: var(--accent-green);
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
 .token-number {
   color: #f5c76e;
 }

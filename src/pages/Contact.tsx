@@ -5,7 +5,7 @@ function Contact() {
         <span className="terminal-prompt">&gt; srinivasib@portfolio:~$</span> ./contact --details
       </h1>
       <p className="terminal-copy terminal-copy--dim contact-intro">
-        Best way to reach me is email. I usually reply within 1-2 business days.
+        Best way to reach me is email. I usually reply within 1–2 days.
       </p>
       <div className="contact-card">
         <div className="contact-list" aria-label="Contact details">

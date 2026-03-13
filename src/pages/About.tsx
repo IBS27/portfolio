@@ -30,7 +30,7 @@ function About() {
         <div className="code-card">
           <pre className="terminal-copy" aria-label="Philosophy markdown snippet">
             <code>
-              <span className="code-line"><span className="line-number">1</span><span className="token-comment"># how I think about building</span></span>
+              <span className="code-line"><span className="line-number">1</span><span className="token-heading"># how I think about building</span></span>
               <span className="code-line"><span className="line-number">2</span><span className="token-string">&nbsp;</span></span>
               <span className="code-line"><span className="line-number">3</span><span className="token-string">I care about shipping things that work. Most of my projects start at hackathons or from problems</span></span>
               <span className="code-line"><span className="line-number">4</span><span className="token-string">I want to solve — 2x hackathon winner and counting.</span></span>
