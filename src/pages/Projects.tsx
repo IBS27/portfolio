@@ -48,11 +48,11 @@ function Projects() {
   return (
     <section>
       <h1 className="terminal-copy section-command">
-        <span className="terminal-prompt">&gt; user@portfolio:~$</span> ls projects/
+        <span className="terminal-prompt">&gt; srinivasib@portfolio:~$</span> ls projects/
       </h1>
       <div className="project-grid">
         {projects.map((project) => (
-          <a key={project.id} className="project-card" href={project.url}>
+          <a key={project.id} className="project-card" href={project.url} target="_blank" rel="noreferrer">
             <div className="project-card__header">
               <span className="project-title">{project.title}</span>
               <span className="project-card__arrow" aria-hidden="true">{'\u2192'}</span>
@@ -67,6 +67,20 @@ function Projects() {
             </div>
           </a>
         ))}
+        <a
+          className="project-card project-card--cta"
+          href="https://github.com/IBS27"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="project-card__header">
+            <span className="project-title">more on github</span>
+            <span className="project-card__arrow" aria-hidden="true">{'\u2192'}</span>
+          </div>
+          <p className="terminal-copy terminal-copy--dim project-details">
+            Check out the rest of my projects, experiments, and contributions.
+          </p>
+        </a>
       </div>
     </section>
   )

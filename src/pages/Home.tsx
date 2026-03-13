@@ -53,7 +53,7 @@ function Home() {
   return (
     <section className="home-page">
       <p className="terminal-copy home-command">
-        <span className="terminal-prompt">&gt; user@portfolio:~$</span> {whoami.typed}
+        <span className="terminal-prompt">&gt; srinivasib@portfolio:~$</span> {whoami.typed}
         {!whoami.done && (
           <span className="terminal-cursor" aria-hidden="true" />
         )}
@@ -72,14 +72,14 @@ function Home() {
       {showWhoamiOutput && (
         <>
           <p className="terminal-copy home-command">
-            <span className="terminal-prompt">&gt; user@portfolio:~$</span> {uptime.typed}
+            <span className="terminal-prompt">&gt; srinivasib@portfolio:~$</span> {uptime.typed}
             {!uptime.done && (
               <span className="terminal-cursor" aria-hidden="true" />
             )}
           </p>
           <div className={`home-block ${showUptimeOutput ? 'home-block--visible' : ''}`}>
             <p className="terminal-copy terminal-copy--dim home-note">
-              up ~10 years (coding since 5th grade) — building palantir for small businesses
+              up ~10 years (coding since 5th grade) — currently building palantir for small businesses
               <span className="terminal-cursor" aria-hidden="true" />
             </p>
           </div>

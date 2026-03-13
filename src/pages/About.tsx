@@ -2,7 +2,7 @@ function About() {
   return (
     <section>
       <h1 className="terminal-copy section-command">
-        <span className="terminal-prompt">&gt; user@portfolio:~$</span> cat about.ts
+        <span className="terminal-prompt">&gt; srinivasib@portfolio:~$</span> cat about.ts
       </h1>
       <div className="about-blocks">
         <div className="code-card">
@@ -25,7 +25,7 @@ function About() {
         </div>
 
         <p className="terminal-copy section-command">
-          <span className="terminal-prompt">&gt; user@portfolio:~$</span> cat philosophy.md
+          <span className="terminal-prompt">&gt; srinivasib@portfolio:~$</span> cat philosophy.md
         </p>
         <div className="code-card">
           <pre className="terminal-copy" aria-label="Philosophy markdown snippet">
