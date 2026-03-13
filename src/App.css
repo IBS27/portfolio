@@ -156,7 +156,7 @@
 .home-page {
   display: flex;
   flex: 1;
-  max-width: 54rem;
+  max-width: 68rem;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.35rem;
@@ -203,7 +203,7 @@
 }
 
 .home-note {
-  max-width: 36rem;
+  max-width: none;
   margin-top: 0.35rem;
 }
 
@@ -341,7 +341,7 @@
 
 .code-card,
 .contact-card {
-  max-width: 58rem;
+  max-width: none;
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.018);

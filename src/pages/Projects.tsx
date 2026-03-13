@@ -10,14 +10,14 @@ const projects: ProjectItem[] = [
   {
     id: 1,
     title: 'Aleithia',
-    description: 'AI platform that aggregates regulatory, political, and consumer data to deliver actionable insights for small businesses. Features GPU-accelerated inference, Graph-RAG, and recursive AI agents.',
+    description: 'Best OpenAI Hack @ UIUC — AI platform that aggregates regulatory, political, and consumer data to deliver actionable insights for small businesses. Features GPU-accelerated inference, Graph-RAG, and recursive AI agents.',
     tech: ['Python', 'Modal', 'vLLM', 'Graph-RAG'],
     url: 'https://github.com/gt12889/aleithia',
   },
   {
     id: 2,
     title: 'TruChain',
-    description: 'Blockchain-based video authenticity verification for elected officials. Combats deepfake misinformation through source-level provenance on Solana with AI-powered clip matching.',
+    description: 'Best Blockchain Hack @ UW-Madison — Blockchain-based video authenticity verification for elected officials. Combats deepfake misinformation through source-level provenance on Solana with AI-powered clip matching.',
     tech: ['TypeScript', 'Solana', 'AI/ML'],
     url: 'https://github.com/IBS27/truchain',
   },

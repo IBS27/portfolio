@@ -79,7 +79,7 @@ function Home() {
           </p>
           <div className={`home-block ${showUptimeOutput ? 'home-block--visible' : ''}`}>
             <p className="terminal-copy terminal-copy--dim home-note">
-              up ~10 years — coding since 5th grade
+              up ~10 years (coding since 5th grade) — building palantir for small businesses
               <span className="terminal-cursor" aria-hidden="true" />
             </p>
           </div>
