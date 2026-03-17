@@ -46,6 +46,20 @@ function Contact() {
               <span className="contact-item__icon" aria-hidden="true">{'\u2197'}</span>
             </a>
           </div>
+          <div className="contact-item">
+            <span className="contact-item__label terminal-copy terminal-copy--dim">
+              x
+            </span>
+            <a
+              className="terminal-link contact-item__value"
+              href="https://x.com/srinivas_i_b"
+              target="_blank"
+              rel="noreferrer"
+            >
+              x.com/srinivas_i_b
+              <span className="contact-item__icon" aria-hidden="true">{'\u2197'}</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
