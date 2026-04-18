@@ -12,7 +12,7 @@ const projects: ProjectItem[] = [
     title: 'Aleithia',
     description: 'Best OpenAI Hack @ UIUC — AI platform that aggregates regulatory, political, and consumer data to deliver actionable insights for small businesses. Features GPU-accelerated inference, Graph-RAG, and recursive AI agents.',
     tech: ['React', 'Python', 'FastAPI', 'Modal', 'vLLM', 'Graph-RAG'],
-    url: 'https://github.com/gt12889/aleithia',
+    url: 'https://github.com/IBS27/aleithia',
   },
   {
     id: 2,
