@@ -1,12 +1,20 @@
 import { useEffect, useState } from 'react'
 
-function useTypewriter(text: string, speed: number, startDelay: number) {
+function useTypewriter(text: string) {
   const [typed, setTyped] = useState('')
   const [done, setDone] = useState(false)
 
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    if (prefersReducedMotion) {
+      setTyped(text)
+      setDone(true)
+      return
+    }
+
     let i = 0
-    let interval: ReturnType<typeof setInterval>
+    let interval: ReturnType<typeof setInterval> | undefined
     const delay = setTimeout(() => {
       interval = setInterval(() => {
         i++
@@ -15,76 +23,60 @@ function useTypewriter(text: string, speed: number, startDelay: number) {
           clearInterval(interval)
           setDone(true)
         }
-      }, speed)
-    }, startDelay)
+      }, 75)
+    }, 300)
 
     return () => {
       clearTimeout(delay)
-      clearInterval(interval)
+      if (interval) clearInterval(interval)
     }
-  }, [text, speed, startDelay])
+  }, [text])
 
   return { typed, done }
 }
 
 function Home() {
-  const [showWhoamiOutput, setShowWhoamiOutput] = useState(false)
-  const [showUptimeOutput, setShowUptimeOutput] = useState(false)
-
-  const whoami = useTypewriter('whoami', 80, 0)
-  // Start uptime typing after whoami output has faded in
-  const uptimeDelay = 6 * 80 + 200 + 600 // whoami typing + pause + fade-in
-  const uptime = useTypewriter('uptime', 80, uptimeDelay)
-
-  useEffect(() => {
-    if (whoami.done) {
-      const t = setTimeout(() => setShowWhoamiOutput(true), 200)
-      return () => clearTimeout(t)
-    }
-  }, [whoami.done])
-
-  useEffect(() => {
-    if (uptime.done) {
-      const t = setTimeout(() => setShowUptimeOutput(true), 200)
-      return () => clearTimeout(t)
-    }
-  }, [uptime.done])
+  const whoami = useTypewriter('whoami')
 
   return (
-    <section className="home-page">
-      <p className="terminal-copy home-command">
-        <span className="terminal-prompt">&gt; srinivasib@portfolio:~$</span> {whoami.typed}
-        {!whoami.done && (
-          <span className="terminal-cursor" aria-hidden="true" />
-        )}
-      </p>
-      <div className={`home-block ${showWhoamiOutput ? 'home-block--visible' : ''}`}>
-        <h1 className="home-title">Srinivas I B</h1>
-        <p className="terminal-copy home-role">CS @ UW-Madison '28</p>
-        <p className="terminal-copy home-summary">
-          Building at the intersection of applied ML, systems, and AI agents.
-        </p>
-        <p className="terminal-copy terminal-copy--dim home-note">
-          2x hackathon winner. Always shipping.
-        </p>
-      </div>
-
-      {showWhoamiOutput && (
-        <>
-          <p className="terminal-copy home-command">
-            <span className="terminal-prompt">&gt; srinivasib@portfolio:~$</span> {uptime.typed}
-            {!uptime.done && (
-              <span className="terminal-cursor" aria-hidden="true" />
-            )}
+    <section className="home-page" aria-labelledby="home-title">
+      <div className="terminal-home">
+        <div className="terminal-home__body">
+          <span className="sr-only">Terminal command: whoami.</span>
+          <p className="terminal-home__command" aria-hidden="true">
+            <span className="terminal-prompt">$</span> {whoami.typed}
+            <span className="terminal-cursor" />
           </p>
-          <div className={`home-block ${showUptimeOutput ? 'home-block--visible' : ''}`}>
-            <p className="terminal-copy terminal-copy--dim home-note">
-              up ~10 years (coding since 5th grade) — currently building palantir for small businesses
-              <span className="terminal-cursor" aria-hidden="true" />
+
+          <div className={`terminal-home__response${whoami.done ? ' terminal-home__response--visible' : ''}`}>
+            <div className="terminal-reveal">
+              <h1 id="home-title">Srinivas I B</h1>
+              <p className="home-role">CS @ UW–Madison '28</p>
+            </div>
+
+            <p className="home-summary terminal-reveal">
+              Building at the intersection of applied ML, systems, and AI agents.
+            </p>
+
+            <dl className="home-stats terminal-reveal">
+              <div>
+                <dt>Uptime</dt>
+                <dd>~10 years coding</dd>
+              </div>
+              <div>
+                <dt>Signal</dt>
+                <dd>2× hackathon winner</dd>
+              </div>
+            </dl>
+
+            <p className="terminal-home__status terminal-reveal">
+              <i className="status-dot" aria-hidden="true" />
+              <span>status</span>
+              <strong>building palantir for small businesses</strong>
             </p>
           </div>
-        </>
-      )}
+        </div>
+      </div>
     </section>
   )
 }

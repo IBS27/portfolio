@@ -1,33 +1,23 @@
 :root {
-  font-family:
-    "SFMono-Regular",
-    "SF Mono",
-    "Cascadia Code",
-    "JetBrains Mono",
-    "Fira Code",
-    "Menlo",
-    "Consolas",
-    monospace;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #e7e7e4;
-  background:
-    linear-gradient(180deg, #020202 0%, #060606 100%);
-  --page-background:
-    linear-gradient(180deg, #020202 0%, #060606 100%);
-  --panel-background: rgba(10, 10, 10, 0.94);
-  --panel-border: rgba(255, 255, 255, 0.1);
-  --text-muted: #9b9b96;
-  --text-primary: #e8e8e3;
-  --accent-cyan: #9b9b96;
-  --accent-green: #7dff98;
-  --accent-green-soft: #b9ffc4;
-  --soft-shadow: 0 26px 80px rgba(0, 0, 0, 0.34);
-
+  font-family: "Manrope", system-ui, sans-serif;
+  color: #f4f4f1;
+  background: #000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --black: #000;
+  --white: #f4f4f1;
+  --white-strong: #fff;
+  --muted: #8b8b88;
+  --muted-deep: #7d7d79;
+  --line: rgba(255, 255, 255, 0.13);
+  --line-soft: rgba(255, 255, 255, 0.075);
+  --cyan: #00e5ff;
+  --cyan-soft: rgba(0, 229, 255, 0.12);
+  --mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 * {
@@ -39,35 +29,34 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--black);
+}
+
 body,
 #root {
+  min-width: 320px;
   min-height: 100vh;
+  margin: 0;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background: var(--page-background);
-  color: var(--text-primary);
+  overflow-x: hidden;
+  background: var(--black);
+  color: var(--white);
 }
 
 body::before {
-  content: "";
   position: fixed;
+  z-index: -1;
   inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+  background-size: 100% 4px;
+  content: "";
+  opacity: 0.18;
   pointer-events: none;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.008) 0,
-      rgba(255, 255, 255, 0.008) 1px,
-      transparent 2px,
-      transparent 96px
-    ),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.012), transparent 24%);
-  opacity: 0.05;
 }
 
 a {
@@ -81,6 +70,17 @@ select {
   font: inherit;
 }
 
-#root {
-  isolation: isolate;
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--cyan);
+  color: var(--black);
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 4px;
 }

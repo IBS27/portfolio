@@ -2,25 +2,26 @@ import { NavLink } from 'react-router-dom'
 
 type NavItem = {
   label: string
-  to: '/home' | '/projects' | '/about' | '/contact'
+  to: '/' | '/projects' | '/about' | '/contact'
 }
 
 const navItems: NavItem[] = [
-  { label: '~/home', to: '/home' },
-  { label: '~/projects', to: '/projects' },
-  { label: '~/about', to: '/about' },
-  { label: '~/contact', to: '/contact' },
+  { label: 'Home', to: '/' },
+  { label: 'Projects', to: '/projects' },
+  { label: 'About', to: '/about' },
+  { label: 'Contact', to: '/contact' },
 ]
 
 function Navbar() {
   return (
-    <nav className="terminal-nav" aria-label="Primary">
+    <nav className="primary-nav" aria-label="Primary navigation">
       {navItems.map((item) => (
         <NavLink
           key={item.to}
           to={item.to}
+          end={item.to === '/'}
           className={({ isActive }) =>
-            `terminal-nav__link${isActive ? ' terminal-nav__link--active' : ''}`
+            `primary-nav__link${isActive ? ' primary-nav__link--active' : ''}`
           }
         >
           {item.label}
