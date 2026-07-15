@@ -88,9 +88,6 @@ function Projects() {
       <header className="editorial-page__header">
         <p className="micro-label">Selected work</p>
         <h1 id="projects-title">Projects</h1>
-        <p className="editorial-page__intro">
-          Products, experiments, and systems built to make difficult information useful.
-        </p>
       </header>
 
       <div className="project-list">

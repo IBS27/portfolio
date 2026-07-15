@@ -442,7 +442,7 @@
 
 .project-row__summary {
   color: #777775;
-  font: 400 0.62rem/1.55 var(--mono);
+  font: 400 0.76rem/1.55 var(--mono);
 }
 
 .project-row__meta {
@@ -450,7 +450,7 @@
   align-items: center;
   gap: 16px;
   color: #7d7d79;
-  font: 400 0.52rem/1.4 var(--mono);
+  font: 400 0.76rem/1.4 var(--mono);
   letter-spacing: 0.08em;
   text-align: right;
   text-transform: uppercase;
@@ -835,7 +835,7 @@
   }
 
   .project-row__summary {
-    font-size: 0.56rem;
+    font-size: 0.66rem;
   }
 
   .project-row__meta > span:first-child {
