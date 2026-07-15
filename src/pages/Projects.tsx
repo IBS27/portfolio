@@ -86,7 +86,6 @@ function Projects() {
   return (
     <section className="editorial-page projects-page" aria-labelledby="projects-title">
       <header className="editorial-page__header">
-        <p className="micro-label">Selected work</p>
         <h1 id="projects-title">Projects</h1>
       </header>
 

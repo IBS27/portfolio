@@ -29,7 +29,6 @@ function Contact() {
   return (
     <section className="editorial-page contact-page" aria-labelledby="contact-title">
       <header className="editorial-page__header">
-        <p className="micro-label">Open channel</p>
         <h1 id="contact-title">Contact</h1>
         <p className="editorial-page__intro">
           The best way to reach me is email. I usually reply within one or two days.

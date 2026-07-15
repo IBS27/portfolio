@@ -2,7 +2,6 @@ function About() {
   return (
     <section className="editorial-page about-page" aria-labelledby="about-title">
       <header className="editorial-page__header">
-        <p className="micro-label">Profile</p>
         <h1 id="about-title">About</h1>
       </header>
 
