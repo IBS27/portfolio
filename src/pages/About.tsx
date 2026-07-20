@@ -14,7 +14,7 @@ function About() {
         <dl className="about-facts">
           <div><dt>Based</dt><dd>Madison, WI</dd></div>
           <div><dt>Studying</dt><dd>Computer Sciences, BS</dd></div>
-          <div><dt>Outside</dt><dd>F1 · movies · basketball · ping pong</dd></div>
+          <div><dt>Outside</dt><dd>formula 1 · movies · basketball · ping pong</dd></div>
         </dl>
       </div>
     </section>
