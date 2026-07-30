@@ -11,20 +11,20 @@ type ProjectItem = {
 
 const projects: ProjectItem[] = [
   {
-    id: 'trackspace',
-    title: 'Trackspace',
-    summary: 'A command center for humanity’s return to the Moon.',
-    description: 'A source-backed dashboard tracking NASA’s path from Artemis missions toward a sustained lunar base through realtime ingestion, capability dependencies, mission timelines, and an interactive 3D Earth–Moon view.',
-    tech: ['Next.js', 'TypeScript', 'Convex', 'Three.js', 'React Flow', 'Vitest'],
-    url: 'https://trackspace.info',
-  },
-  {
     id: 'aleithia',
     title: 'Aleithia',
     summary: 'Intelligence for small businesses.',
     description: 'Best OpenAI Hack at UIUC. An AI platform that combines regulatory, political, and consumer data into practical intelligence for small businesses, powered by GPU inference, Graph-RAG, and recursive agents.',
     tech: ['React', 'Python', 'FastAPI', 'Modal', 'vLLM', 'Graph-RAG'],
     url: 'https://github.com/IBS27/aleithia',
+  },
+  {
+    id: 'trackspace',
+    title: 'Trackspace',
+    summary: 'A command center for humanity’s return to the Moon.',
+    description: 'A source-backed dashboard tracking NASA’s path from Artemis missions toward a sustained lunar base through realtime ingestion, capability dependencies, mission timelines, and an interactive 3D Earth–Moon view.',
+    tech: ['Next.js', 'TypeScript', 'Convex', 'Three.js', 'React Flow', 'Vitest'],
+    url: 'https://trackspace.info',
   },
   {
     id: 'nuviya',
