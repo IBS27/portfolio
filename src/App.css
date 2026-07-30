@@ -313,7 +313,7 @@
 
 .terminal-home__status {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 9px;
   margin: 20px 0 0;
   color: #858581;
@@ -324,6 +324,7 @@
 .terminal-home__status .status-dot {
   width: 6px;
   height: 6px;
+  align-self: center;
 }
 
 .terminal-home__status > span {
@@ -804,7 +805,7 @@
   }
 
   .terminal-home__status strong {
-    grid-column: 2;
+    grid-column: 1 / -1;
   }
 
   .editorial-page {
