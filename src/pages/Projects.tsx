@@ -31,7 +31,7 @@ const projects: ProjectItem[] = [
     title: 'Nuviya',
     summary: 'A personal agent that handles customer support cases on your behalf.',
     description: 'Designed and built Nuviya’s animated production marketing experience for an agentic customer-support platform, with responsive product storytelling, workflow demonstrations, and conversion-focused interactions.',
-    tech: ['Multimodal Agents', 'Long-Horizon Automation', 'React', 'TypeScript', 'Vite', 'Framer Motion', 'Formspree'],
+    tech: ['Multimodal', 'Long-Horizon Automation', 'React', 'TypeScript', 'Vite', 'Framer Motion', 'Formspree'],
     url: 'https://nuviya.ai',
   },
   {
