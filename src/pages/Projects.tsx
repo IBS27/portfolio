@@ -15,7 +15,7 @@ const projects: ProjectItem[] = [
     title: 'Aleithia',
     summary: 'Intelligence for small businesses.',
     description: 'Best OpenAI Hack at UIUC. An AI platform that combines regulatory, political, and consumer data into practical intelligence for small businesses, powered by GPU inference, Graph-RAG, and recursive agents.',
-    tech: ['React', 'Python', 'FastAPI', 'Modal', 'vLLM', 'Graph-RAG'],
+    tech: ['Fine-Tuning', 'Agentic Research', 'React', 'Python', 'FastAPI', 'Modal', 'vLLM', 'Graph-RAG'],
     url: 'https://github.com/IBS27/aleithia',
   },
   {
@@ -23,15 +23,15 @@ const projects: ProjectItem[] = [
     title: 'Trackspace',
     summary: 'A command center for humanity’s return to the Moon.',
     description: 'A source-backed dashboard tracking NASA’s path from Artemis missions toward a sustained lunar base through realtime ingestion, capability dependencies, mission timelines, and an interactive 3D Earth–Moon view.',
-    tech: ['Next.js', 'TypeScript', 'Convex', 'Three.js', 'React Flow', 'Vitest'],
+    tech: ['Lunar Missions', 'Systems Mapping', 'Next.js', 'TypeScript', 'Convex', 'Three.js', 'React Flow', 'Vitest'],
     url: 'https://trackspace.info',
   },
   {
     id: 'nuviya',
     title: 'Nuviya',
-    summary: 'An agentic support platform, explained through motion.',
+    summary: 'A personal agent that handles customer support cases on your behalf.',
     description: 'Designed and built Nuviya’s animated production marketing experience for an agentic customer-support platform, with responsive product storytelling, workflow demonstrations, and conversion-focused interactions.',
-    tech: ['React', 'TypeScript', 'Vite', 'Framer Motion', 'Formspree'],
+    tech: ['Multimodal Agents', 'Long-Horizon Automation', 'React', 'TypeScript', 'Vite', 'Framer Motion', 'Formspree'],
     url: 'https://nuviya.ai',
   },
   {
@@ -39,7 +39,7 @@ const projects: ProjectItem[] = [
     title: 'TruChain',
     summary: 'Source-level provenance for public video.',
     description: 'Best Blockchain Hack at UW–Madison. A video-authenticity system for elected officials that combats deepfake misinformation with Solana provenance and AI-powered clip matching.',
-    tech: ['React', 'TypeScript', 'Solana', 'AI/ML'],
+    tech: ['Media Provenance', 'Deepfake Detection', 'React', 'TypeScript', 'Solana', 'AI/ML'],
     url: 'https://github.com/IBS27/truchain',
   },
   {
@@ -47,7 +47,7 @@ const projects: ProjectItem[] = [
     title: 'Atmosphere',
     summary: 'A soundtrack generated from your surroundings.',
     description: 'A HackMIT 2025 project: smart glasses that read the environment and generate matching music in real time through scene detection, music generation, and a low-latency streaming loop.',
-    tech: ['React', 'Node.js', 'Claude API', 'Suno API', 'WebSocket'],
+    tech: ['Ambient Computing', 'Generative Audio', 'React', 'Node.js', 'Claude API', 'Suno API', 'WebSocket'],
     url: 'https://github.com/IBS27/atmosphere',
   },
   {
@@ -55,7 +55,7 @@ const projects: ProjectItem[] = [
     title: 'Luminova',
     summary: 'Solar potential and payback, mapped to your home.',
     description: 'A team hackathon project combining NREL irradiance data, geospatial input, and financial modeling to estimate household solar output, installation payback, lifetime savings, and avoided emissions.',
-    tech: ['Django', 'Python', 'NREL', 'HSDS', 'OpenStreetMap'],
+    tech: ['Solar Modeling', 'Geospatial Analysis', 'Django', 'Python', 'NREL', 'HSDS', 'OpenStreetMap'],
     url: 'https://github.com/psdecabooter/LUMINOVA-DotData2025',
   },
   {
@@ -63,7 +63,7 @@ const projects: ProjectItem[] = [
     title: 'SplitSmart',
     summary: 'Group expenses without the spreadsheet.',
     description: 'An AI-enhanced expense tracker with receipt OCR, flexible bill splitting, and real-time synchronization across devices.',
-    tech: ['Flutter', 'FastAPI', 'Firebase'],
+    tech: ['Group Expenses', 'Receipt OCR', 'Flutter', 'FastAPI', 'Firebase'],
     url: 'https://github.com/IBS27/splitsmart',
   },
   {
@@ -71,7 +71,7 @@ const projects: ProjectItem[] = [
     title: 'PoliSight',
     summary: 'Policy arguments, omissions, and impact—made legible.',
     description: 'A political-literacy tool that decomposes policy arguments, detects omissions in reporting, and estimates the personal financial impact of proposed policy.',
-    tech: ['TypeScript', 'Next.js', 'AI/NLP'],
+    tech: ['Policy Analysis', 'Financial Impact', 'TypeScript', 'Next.js', 'AI/NLP'],
     url: 'https://polisight.vercel.app',
   },
 ]
