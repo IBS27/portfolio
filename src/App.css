@@ -352,6 +352,11 @@
   padding: 142px 28px 148px;
 }
 
+.projects-page {
+  width: min(100%, 900px);
+  padding-inline: 32px;
+}
+
 .editorial-page__header {
   margin-bottom: 68px;
   text-align: center;
@@ -415,11 +420,11 @@
 .project-row__trigger {
   display: grid;
   width: 100%;
-  min-height: 86px;
+  min-height: 96px;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 26px;
+  gap: 36px;
   align-items: center;
-  padding: 18px 0;
+  padding: 22px 0;
   border: 0;
   background: transparent;
   color: inherit;
@@ -451,8 +456,8 @@
   align-items: center;
   gap: 16px;
   color: #7d7d79;
-  font: 400 0.76rem/1.4 var(--mono);
-  letter-spacing: 0.08em;
+  font: 400 0.7rem/1.4 var(--mono);
+  letter-spacing: 0.07em;
   text-align: right;
   text-transform: uppercase;
 }
