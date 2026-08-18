@@ -27,14 +27,6 @@ const projects: ProjectItem[] = [
     url: 'https://trackspace.info',
   },
   {
-    id: 'nuviya',
-    title: 'Nuviya',
-    summary: 'A personal agent that handles customer support cases on your behalf.',
-    description: 'Designed and built Nuviya’s animated production marketing experience for an agentic customer-support platform, with responsive product storytelling, workflow demonstrations, and conversion-focused interactions.',
-    tech: ['Multimodal', 'Long-Horizon Automation', 'React', 'TypeScript', 'Vite', 'Framer Motion', 'Formspree'],
-    url: 'https://nuviya.ai',
-  },
-  {
     id: 'truchain',
     title: 'TruChain',
     summary: 'Source-level provenance for public video.',
