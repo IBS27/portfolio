@@ -11,6 +11,14 @@ type ProjectItem = {
 
 const projects: ProjectItem[] = [
   {
+    id: 'pixel',
+    title: 'Pixel',
+    summary: 'Agentic photo editing.',
+    description: 'An AI agent that translates creative direction into precise, multistep photo edits using professional controls for exposure, color, curves, and selective masking.',
+    tech: ['Computational Photography', 'React', 'TypeScript', 'Convex', 'WebGL'],
+    url: 'https://trypixel.app',
+  },
+  {
     id: 'aleithia',
     title: 'Aleithia',
     summary: 'Intelligence for small businesses.',
