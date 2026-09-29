@@ -27,6 +27,14 @@ const projects: ProjectItem[] = [
     url: 'https://github.com/IBS27/aleithia',
   },
   {
+    id: 'rumi',
+    title: 'Rumi',
+    summary: 'Cursor for interior design.',
+    description: 'Scan a room to create an interactive 3D model, then redesign it by describing what you want. Rumi plans furniture layouts and lets you refine them through conversation, with checks that keep designs within budget, prevent overlaps, and leave doorways clear.',
+    tech: ['Spatial AI', 'Interior Design', 'Swift', 'ARKit', 'RoomPlan', 'Three.js', 'Convex'],
+    url: 'https://github.com/IBS27/rumi',
+  },
+  {
     id: 'trackspace',
     title: 'Trackspace',
     summary: 'A command center for humanity’s return to the Moon.',
