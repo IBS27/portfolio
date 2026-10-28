@@ -65,7 +65,7 @@ function Home() {
               </div>
               <div>
                 <dt>Signal</dt>
-                <dd>3× hackathon winner</dd>
+                <dd>4× hackathon winner</dd>
               </div>
             </dl>
 
