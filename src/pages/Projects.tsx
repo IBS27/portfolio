@@ -35,6 +35,14 @@ const projects: ProjectItem[] = [
     url: 'https://github.com/IBS27/rumi',
   },
   {
+    id: 'recollection',
+    title: 'Re:Collection',
+    summary: 'Photorealistic 3D memories for Alzheimer’s care.',
+    description: '1st place, Meta track at Cal Hacks 13.0. A memory-care platform that reconstructs family visits and old home videos into explorable 3D scenes using Depth Anything 3, multi-view depth fusion, and Gaussian splatting, with an AI companion that narrates only caregiver-approved, source-cited details.',
+    tech: ['Gaussian Splatting', 'Depth Fusion', 'PyTorch', 'Depth Anything 3', 'Convex', 'Cloudflare R2', 'Hybrid RAG'],
+    url: 'https://shividoge.github.io/re-collection-site/',
+  },
+  {
     id: 'trackspace',
     title: 'Trackspace',
     summary: 'A command center for humanity’s return to the Moon.',
